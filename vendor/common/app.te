@@ -3,6 +3,7 @@ allow appdomain qdsp_device:chr_file r_file_perms;
 
 get_prop(appdomain, hwui_prop)
 get_prop(appdomain, bservice_prop)
+get_prop(appdomain, camera_prop)
 get_prop(appdomain, reschedule_service_prop)
 get_prop(appdomain, vendor_iop_prop)
 get_prop(appdomain, vendor_scroll_prop)

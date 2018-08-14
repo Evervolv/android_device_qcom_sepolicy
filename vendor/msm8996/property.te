@@ -27,3 +27,6 @@
 
 #properties for qvrd
 type ctl_qvrd_prop, property_type;
+
+#properites for init.qcom.sh script
+type vendor_media_msm8996_version_prop, property_type;

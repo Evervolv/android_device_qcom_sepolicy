@@ -28,3 +28,6 @@
 get_prop(appdomain, persist_dpm_prop)
 
 unix_socket_send(appdomain, seempdw, seempd)
+
+# Read vendor camera props
+get_prop(appdomain, persist_camera_prop)

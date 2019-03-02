@@ -42,6 +42,7 @@
 /dev/block/mmcblk0rpmb                                                u:object_r:rpmb_device:s0
 /dev/block/platform/soc.0/7824900.sdhci/by-name/config                u:object_r:frp_block_device:s0
 /dev/block/platform/soc.0/7824900.sdhci/by-name/logdump               u:object_r:logdump_partition:s0
+/dev/block/platform/soc.0/7824900.sdhci/by-name/persist             u:object_r:persist_block_device:s0
 
 #Using soc instead of soc.0 to make it compatable with 3.18 kernel
 
@@ -56,6 +57,7 @@
 /dev/block/platform/soc/7824900.sdhci/by-name/dip                   u:object_r:dip_device:s0
 /dev/block/platform/soc/7824900.sdhci/by-name/mdtp                  u:object_r:mdtp_device:s0
 /dev/block/platform/soc/7824900.sdhci/by-name/logdump               u:object_r:logdump_partition:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/persist              u:object_r:persist_block_device:s0
 
 #TODO: need to remove the regexp
 /sys/devices(/platform)?/soc/[a-z0-9\.:]+,[a-z0-9\-\_]+/subsys[0-9]+/name         u:object_r:sysfs_ssr:s0

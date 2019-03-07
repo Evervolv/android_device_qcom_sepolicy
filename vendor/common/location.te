@@ -108,3 +108,5 @@ binder_call(location, qtidataservices_app)
 
 #allow qdma prop
 get_prop(location, vendor_qdma_prop);
+
+allow location hal_cne_hwservice:hwservice_manager find;

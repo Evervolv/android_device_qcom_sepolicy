@@ -22,3 +22,8 @@ userdebug_or_eng(`
 
 get_prop(surfaceflinger, vendor_gralloc_prop)
 get_prop(surfaceflinger, vendor_display_prop)
+
+#Allow access to binder callback's to perf hal
+hal_client_domain(surfaceflinger, hal_perf)
+
+r_dir_file(surfaceflinger, sysfs_kgsl)

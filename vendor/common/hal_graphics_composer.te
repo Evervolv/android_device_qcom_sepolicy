@@ -86,6 +86,10 @@ unix_socket_connect(hal_graphics_composer_default, qdcmsocket, qdcm-ss)
 # allow composer client to find display config service.
 allow hal_graphics_composer_client hal_display_config_hwservice:hwservice_manager find;
 
+#Allow graphics sysfs access
+allow hal_graphics_composer sysfs_kgsl:{file lnk_file} r_file_perms;
+allow hal_graphics_composer sysfs_kgsl:dir r_dir_perms;
+
 # Rule for pps socket usage
 unix_socket_connect(hal_graphics_composer_default, pps, mm-pp-daemon)
 

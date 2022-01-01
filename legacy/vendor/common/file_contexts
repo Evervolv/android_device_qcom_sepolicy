@@ -741,3 +741,5 @@
 
 #wifilearner daemon
 /(vendor|system/vendor)/bin/wifilearner    u:object_r:wifilearnersvc_exec:s0
+
+/(vendor|system/vendor)/bin/embmsslServer u:object_r:vendor_hal_embmssl_qti_exec:s0

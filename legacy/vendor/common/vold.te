@@ -42,5 +42,3 @@ allow vold swap_block_device:blk_file r_file_perms;
 allow vold mnt_vendor_file:dir { open read ioctl };
 
 allow vold sysfs_mmc_host:file w_file_perms;
-
-allow vold mnt_vendor_file:dir r_dir_perms;
